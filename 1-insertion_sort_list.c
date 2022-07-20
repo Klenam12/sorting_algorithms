@@ -62,4 +62,6 @@ void insertion_sort_list(listint_t **list)
 		left = ptr;
 		ptr = ptr->next;
 		right = ptr;
+	}
 
+}
