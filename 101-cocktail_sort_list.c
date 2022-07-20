@@ -75,4 +75,14 @@ result shake_forward(listint_t *left, listint_t *right, listint_t *head)
 			swapped.status = 1;
 			swapped.head = head;
 		}
+		left = neighbor;
+		neighbor = neighbor->next;
+	}
+	return (swapped);
+}
+
+/**
+ * shake_reverse - Runs a bubblesort backwards
+ * @left: left node
+ * @right: right node
 
